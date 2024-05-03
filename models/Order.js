@@ -18,6 +18,8 @@ const orderSchema = new Schema(
       },
     ],
     total: { type: Number, required: true },
+    isDelivered: { type: Boolean, default: false },
+    isPaid: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
